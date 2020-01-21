@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'eclipse'
+}
+
+group 'at.gwt.ccc.exam'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.logging.log4j:log4j-api:2.11.2'
+    implementation 'org.apache.logging.log4j:log4j-core:2.11.2'
+    
+    implementation 'at.gwt.ccc.base:CodingContextBase:1.0+'
+    
+    testCompile 'junit:junit:4.12'
+}
